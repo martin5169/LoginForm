@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="funciones.js"></script>
+    <title>Pagina de registro</title>
+</head>
+<body>
+    <div id="contenedor-formulario">
+        <img src="OIP.jfif" alt="" class="logo">
+    <br>
+    <label>Ingrese su usuario</label>
+    <input type="text" class="ingreso" placeholder="nombre@example.com" id="ingresarUsuario" required>
+    <br>
+    <label>Ingrese su contraseña</label>
+    <input type="password" class="ingreso" placeholder="contraseña" id="ingresarPassword" required>
+    <br>
+    <button class="botones" onclick="validarUsuario()">Ingresar</button>
+    <br>
+    <button class="botones" onclick="mostrarRegistro()">Registrarse</button>
+    </div>
+    
+        <div id="contenedor-registro" style="visibility:hidden">
+         
+            <h1>Formulario de Registro</h1>
+        <form class="form" name="ventana">
+            <label>Ingrese su usuario</label>
+            <input type="text" class="ingreso" name="usuario" required>
+            <br>
+            <label>Ingrese su contraseña</label>
+            <input type="password" class="ingreso" id="ingresoContraseña" name="password" required>
+            <br>
+            <label>Repita contraseña</label>
+            <input type="password" class="ingreso" id="repitoContraseña" name="repeatPass" required>
+            <br>
+            <label>Apellido</label>
+            <input type="text" class="ingreso" name="apellido" required>
+            <br>
+            <label>Nombre</label>
+            <input type="text" class="ingreso" name="nombre" required>
+            <br>
+            <label>Edad</label>
+            <input type="number" class="ingreso" id="seleccion-edad" name="edad" name="quantity" min="18" max="99" required >
+            <br>
+            <label for="profesiones">Selecciona tu profesion</label>
+            <select name="profesiones" class="listado-profesiones">
+            <option value="Analista de sistemas">Analista de sistemas</option>
+            <option value="Profesor de educacion fisica">Profesor de educacion fisica</option>
+            <option value="Policia">Policia</option>
+            <option value="Mago">Mago</option>
+            </select>
+            <br>
+            <br>
+            <label>Ingrese el Captcha</label>
+            <input type="text" class="ingreso" id="captchaIngresado" required >
+            <br>
+        </form>
+        <img src="captcha.png" alt="" id="captcha">
+            <br>
+
+            <div class="botonesRegistro"> 
+                <button id="boton-aceptar" onclick="registrar()" class="botones">Aceptar</button>
+                <button id="boton-cancelar" onclick="mostrarFormulario()" class="botones">Cancelar</button>
+            </div>
+        
+        </div>
+    
+</body>
+</html>

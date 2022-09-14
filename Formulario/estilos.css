@@ -1,0 +1,62 @@
+body{
+    background-color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.logo{
+    width: min-content;
+    align-self: center;
+    border-radius: 30px;
+}
+.ingreso{
+    display: flex;
+    width: 95%;
+    padding: 10px;
+    outline: none;
+}
+.botones{
+background-color: #1989c9;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 24px;  
+  cursor: pointer; 
+  float: left; 
+}
+
+
+#contenedor-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: grey;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.listado-profesiones{
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+#captcha{
+    width: 400px;
+    height: 100px;
+    align-self: center;
+}
