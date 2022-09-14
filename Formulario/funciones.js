@@ -36,7 +36,13 @@ function mostrarFormulario(){
     document.getElementById('contenedor-registro').style.visibility="hidden";
     document.getElementById('contenedor-formulario').style.visibility="visible";
     document.getElementById('ingresarPassword').value=null;
-    document.getElementById('ingresarUsuario').value=null;    
+    document.getElementById('ingresoContraseña').value=null;    
+    document.getElementById('repitoContraseña').value=null;
+    document.getElementById('ingresarUsuario').value=null;  
+    document.getElementById('ingresoUsuario').value=null
+    document.getElementById('ingresoApellido').value=null;    
+    document.getElementById('ingresoNombre').value=null;  
+    document.getElementById('seleccion-edad').value=null;
 }
 
 function verificarCaptcha(){
@@ -63,6 +69,9 @@ function registrar() {
     document.getElementById('captchaIngresado').value=null
     document.getElementById('ingresoContraseña').value=null;    
     document.getElementById('repitoContraseña').value=null;
+    document.getElementById('ingresoUsuario').value=null
+    document.getElementById('ingresoApellido').value=null;    
+    document.getElementById('ingresoNombre').value=null;
 }
 
 

@@ -28,7 +28,7 @@
             <h1>Formulario de Registro</h1>
         <form class="form" name="ventana">
             <label>Ingrese su usuario</label>
-            <input type="text" class="ingreso" name="usuario" required>
+            <input type="text" class="ingreso" id="ingresoUsuario"name="usuario" required>
             <br>
             <label>Ingrese su contraseña</label>
             <input type="password" class="ingreso" id="ingresoContraseña" name="password" required>
@@ -37,16 +37,16 @@
             <input type="password" class="ingreso" id="repitoContraseña" name="repeatPass" required>
             <br>
             <label>Apellido</label>
-            <input type="text" class="ingreso" name="apellido" required>
+            <input type="text" class="ingreso" id="ingresoApellido"name="apellido" required>
             <br>
             <label>Nombre</label>
-            <input type="text" class="ingreso" name="nombre" required>
+            <input type="text" class="ingreso" id="ingresoNombre" name="nombre" required>
             <br>
             <label>Edad</label>
             <input type="number" class="ingreso" id="seleccion-edad" name="edad" name="quantity" min="18" max="99" required >
             <br>
             <label for="profesiones">Selecciona tu profesion</label>
-            <select name="profesiones" class="listado-profesiones">
+            <select name="profesiones" class="listado-profesiones" id="seleccion-edad">
             <option value="Analista de sistemas">Analista de sistemas</option>
             <option value="Profesor de educacion fisica">Profesor de educacion fisica</option>
             <option value="Policia">Policia</option>
@@ -57,15 +57,14 @@
             <label>Ingrese el Captcha</label>
             <input type="text" class="ingreso" id="captchaIngresado" required >
             <br>
-        </form>
-        <img src="captcha.png" alt="" id="captcha">
+            <img src="captcha.png" alt="" id="captcha">
             <br>
-
+            <br>
             <div class="botonesRegistro"> 
-                <button id="boton-aceptar" onclick="registrar()" class="botones">Aceptar</button>
+                <button boton-aceptar onclick="registrar()" class="botones">Aceptar</button>
                 <button id="boton-cancelar" onclick="mostrarFormulario()" class="botones">Cancelar</button>
             </div>
-        
+        </form>
         </div>
     
 </body>
