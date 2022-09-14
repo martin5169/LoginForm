@@ -65,13 +65,13 @@ function registrar() {
     if(validarContraseña() && verificarCaptcha()){
         mostrarFormulario();
         alert("Registro exitoso");
-    }
+    } else{
     document.getElementById('captchaIngresado').value=null
     document.getElementById('ingresoContraseña').value=null;    
     document.getElementById('repitoContraseña').value=null;
     document.getElementById('ingresoUsuario').value=null
     document.getElementById('ingresoApellido').value=null;    
-    document.getElementById('ingresoNombre').value=null;
+    document.getElementById('ingresoNombre').value=null;}
 }
 
 
